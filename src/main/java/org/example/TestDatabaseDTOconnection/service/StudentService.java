@@ -2,7 +2,7 @@ package org.example.TestDatabaseDTOconnection.service;
 
 
 import lombok.AllArgsConstructor;
-import org.example.TestDatabaseDTOconnection.model.Student;
+import org.example.TestDatabaseDTOconnection.entity.Student;
 import org.example.TestDatabaseDTOconnection.repository.IStudentRepository;
 import org.springframework.stereotype.Service;
 

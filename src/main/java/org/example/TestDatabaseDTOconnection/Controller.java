@@ -1,7 +1,7 @@
 package org.example.TestDatabaseDTOconnection;
 
 import lombok.AllArgsConstructor;
-import org.example.TestDatabaseDTOconnection.model.Student;
+import org.example.TestDatabaseDTOconnection.entity.Student;
 import org.example.TestDatabaseDTOconnection.dto.StudentMapper;
 import org.example.TestDatabaseDTOconnection.dto.StudentDTO;
 import org.example.TestDatabaseDTOconnection.service.StudentService;

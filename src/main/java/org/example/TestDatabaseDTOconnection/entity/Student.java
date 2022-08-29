@@ -1,4 +1,4 @@
-package org.example.TestDatabaseDTOconnection.model;
+package org.example.TestDatabaseDTOconnection.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

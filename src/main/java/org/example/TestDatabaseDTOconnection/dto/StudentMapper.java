@@ -1,7 +1,7 @@
 package org.example.TestDatabaseDTOconnection.dto;
 
 
-import org.example.TestDatabaseDTOconnection.model.Student;
+import org.example.TestDatabaseDTOconnection.entity.Student;
 import org.mapstruct.Mapper;
 import java.util.List;
 

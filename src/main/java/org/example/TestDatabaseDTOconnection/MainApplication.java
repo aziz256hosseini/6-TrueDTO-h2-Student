@@ -1,7 +1,6 @@
 package org.example.TestDatabaseDTOconnection;
 
-import org.example.TestDatabaseDTOconnection.dto.StudentDTO;
-import org.example.TestDatabaseDTOconnection.model.Student;
+import org.example.TestDatabaseDTOconnection.entity.Student;
 import org.example.TestDatabaseDTOconnection.repository.IStudentRepository;
 import org.example.TestDatabaseDTOconnection.service.IStudentService;
 import org.example.TestDatabaseDTOconnection.service.StudentService;

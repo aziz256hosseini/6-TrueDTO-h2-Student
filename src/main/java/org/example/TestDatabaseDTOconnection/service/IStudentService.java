@@ -1,6 +1,6 @@
 package org.example.TestDatabaseDTOconnection.service;
 
-import org.example.TestDatabaseDTOconnection.model.Student;
+import org.example.TestDatabaseDTOconnection.entity.Student;
 import java.util.List;
 
 public interface IStudentService {
