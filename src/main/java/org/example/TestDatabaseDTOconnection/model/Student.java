@@ -3,8 +3,10 @@ package org.example.TestDatabaseDTOconnection.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Data
@@ -24,6 +26,10 @@ public class Student {
 
     @Column
     String name;
+
+    @Column
+    @CreationTimestamp
+    private Date created_at;
 
 
 
