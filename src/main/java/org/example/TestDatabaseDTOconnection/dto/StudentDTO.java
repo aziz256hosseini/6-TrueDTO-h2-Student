@@ -16,9 +16,7 @@ public class StudentDTO{
     @ApiModelProperty(required = true)
     String name;
 
-    @Column
     @CreationTimestamp
     private Date created_at;
-
 
 }
