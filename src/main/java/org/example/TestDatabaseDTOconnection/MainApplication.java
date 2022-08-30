@@ -1,5 +1,6 @@
 package org.example.TestDatabaseDTOconnection;
 
+import org.example.TestDatabaseDTOconnection.dto.StudentDTO;
 import org.example.TestDatabaseDTOconnection.entity.Student;
 import org.example.TestDatabaseDTOconnection.repository.IStudentRepository;
 import org.example.TestDatabaseDTOconnection.service.IStudentService;
@@ -33,8 +34,11 @@ public class MainApplication implements ApplicationRunner{
         Student student1 = new Student();
         student1.setAge(16);
         student1.setName("Aziz Hoseini");
+        iStudentService.save(student1);
 
-        Student savedStudent = iStudentService.save(student1);
+
+
+
 
 
     }

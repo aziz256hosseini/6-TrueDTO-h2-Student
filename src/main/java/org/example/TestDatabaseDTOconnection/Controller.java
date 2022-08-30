@@ -8,6 +8,7 @@ import org.example.TestDatabaseDTOconnection.service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @RestController
@@ -54,5 +55,16 @@ public class Controller {
 
     }
 
+    /*
+    Database URL:                          http://localhost:8585/h2-console
+    And Finally in postman get request in http://localhost:8585/student/v1/1 :
+
+    {
+    "age": 16,
+    "name": "Aziz Hosseini",
+    "created_at": "2022-08-30T05:24:39.687+00:00"
+    }
+
+     */
 
 }

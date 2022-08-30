@@ -2,10 +2,11 @@ package org.example.TestDatabaseDTOconnection.service;
 
 
 import lombok.AllArgsConstructor;
+import org.example.TestDatabaseDTOconnection.dto.StudentDTO;
+import org.example.TestDatabaseDTOconnection.dto.StudentMapper;
 import org.example.TestDatabaseDTOconnection.entity.Student;
 import org.example.TestDatabaseDTOconnection.repository.IStudentRepository;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -14,6 +15,7 @@ import java.util.Optional;
 public class StudentService implements IStudentService{
 
     private IStudentRepository studentRepository;
+    private StudentMapper studentMapper;
 
 
     @Override
@@ -24,9 +26,11 @@ public class StudentService implements IStudentService{
     @Override
     public Student getById(Long id) {
         Optional<Student> optionalStudent = studentRepository.findById(id);
+
         if (optionalStudent.isEmpty()){
             throw new RuntimeException("Not Found");
         }
+
         return optionalStudent.get();
     }
 
@@ -34,4 +38,13 @@ public class StudentService implements IStudentService{
     public List<Student> getAll() {
         return (List<Student>) studentRepository.findAll();
     }
+
+    @Override
+    public Student saveDTO(StudentDTO studentDTO) {
+
+
+        return studentMapper.toEntity(studentDTO);
+    }
+
+
 }
